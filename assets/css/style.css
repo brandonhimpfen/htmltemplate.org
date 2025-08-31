@@ -7,8 +7,9 @@
 html, body { scroll-behavior: smooth; }
 
 /* Space below fixed-top navbar */
-body { padding-top: 4.25rem; }
-
+body {
+  padding-top: 3.5rem; /* was 4.25rem */
+}
 .hero{
   min-height: 52vh;
   background-image: linear-gradient(rgba(var(--brand-dark-rgb), .85), rgba(var(--brand-dark-rgb), .85)), url('hero.jpg');
