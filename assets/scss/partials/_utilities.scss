@@ -1,0 +1,5 @@
+// Example partial
+@mixin card-lift {
+  transition: transform .2s ease;
+  &:hover { transform: translateY(-2px); }
+}

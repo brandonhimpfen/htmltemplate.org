@@ -1,0 +1,34 @@
+/* Core look derived from Code for Toronto (dark navbar, blue hero) */
+:root{
+  --brand-dark:#0c3866; /* seen in Code for Toronto card-title */
+  --brand-dark-rgb:12,56,102;
+}
+
+html, body { scroll-behavior: smooth; }
+
+/* Space below fixed-top navbar */
+body { padding-top: 4.25rem; }
+
+.hero{
+  min-height: 52vh;
+  background-image: linear-gradient(rgba(var(--brand-dark-rgb), .85), rgba(var(--brand-dark-rgb), .85)), url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-title{ color: var(--brand-dark); }
+
+/* Light mode card lift */
+.card{ border: 0; }
+.card:hover{ transform: translateY(-2px); transition: transform .2s ease; }
+
+/* Code blocks */
+pre code{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+/* Footer */
+footer { border-top: 1px solid rgba(255,255,255,.1); }
+
+/* Utility */
+.bg-body-tertiary{ background-color: #f6f7f9 !important; }

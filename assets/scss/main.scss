@@ -1,0 +1,8 @@
+// SCSS starter for HTML Template
+$brand-dark: #0c3866;
+
+:root {
+  --brand-dark: #{$brand-dark};
+}
+
+@import "partials/_utilities";

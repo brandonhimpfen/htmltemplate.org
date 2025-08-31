@@ -1,0 +1,9 @@
+/* TEAM */
+Developer: Brandon Himpfen
+Site: https://www.himpfen.com
+
+/* THANKS */
+Tools: HTML5, CSS, Bootstrap, Modernizr, jQuery
+
+/* SITE */
+Last update: 2025-08-31
