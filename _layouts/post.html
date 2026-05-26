@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article>
+  <header class="page-hero text-white text-center py-5">
+    <div class="container py-4">
+      <p class="text-uppercase small fw-bold mb-2">HTML Template Blog</p>
+      <h1 class="display-5 fw-bold mb-3">{{ page.title }}</h1>
+      <p class="mb-0">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} · {{ page.author }}{% endif %}</p>
+    </div>
+  </header>
+  <main class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8 post-content">
+          {{ content }}
+          <hr class="my-5">
+          <p><a href="{{ '/blog/' | relative_url }}">← Back to blog</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+</article>

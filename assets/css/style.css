@@ -1,0 +1,58 @@
+/* Core look derived from Code for Toronto (dark navbar, blue hero) */
+:root{
+  --brand-dark:#0c3866; /* seen in Code for Toronto card-title */
+  --brand-dark-rgb:12,56,102;
+}
+
+html, body { scroll-behavior: smooth; }
+
+/* Space below fixed-top navbar */
+body {
+  padding-top: 3.5rem; /* was 4.25rem */
+}
+.hero{
+  min-height: 52vh;
+  background-image: linear-gradient(rgba(var(--brand-dark-rgb), .85), rgba(var(--brand-dark-rgb), .85)), url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-title{ color: var(--brand-dark); }
+
+/* Light mode card lift */
+.card{ border: 0; }
+.card:hover{ transform: translateY(-2px); transition: transform .2s ease; }
+
+/* Code blocks */
+pre code{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+/* Footer */
+footer { border-top: 1px solid rgba(255,255,255,.1); }
+
+/* Utility */
+.bg-body-tertiary{ background-color: #f6f7f9 !important; }
+
+.page-hero{
+  background-image: linear-gradient(rgba(var(--brand-dark-rgb), .9), rgba(var(--brand-dark-rgb), .9)), url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.post-content{
+  font-size: 1.075rem;
+  line-height: 1.75;
+}
+
+.post-content h2,
+.post-content h3{
+  color: var(--brand-dark);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-content img{
+  max-width: 100%;
+  height: auto;
+}

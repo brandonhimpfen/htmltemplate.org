@@ -1,0 +1,24 @@
+title: HTML Template
+description: A modern, accessibility-focused HTML starter template for fast, robust, adaptable websites.
+url: "https://htmltemplate.org"
+baseurl: ""
+lang: en
+
+author:
+  name: HTML Template
+  location: Canada
+
+permalink: /:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - CHANGELOG.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

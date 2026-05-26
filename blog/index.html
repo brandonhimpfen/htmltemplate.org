@@ -1,0 +1,18 @@
+---
+layout: page
+title: Blog
+description: Notes, release updates, and practical guidance for building clean, accessible, adaptable HTML projects.
+---
+<div class="row g-4">
+  {% for post in site.posts %}
+  <div class="col-md-6">
+    <article class="card h-100 shadow-sm">
+      <div class="card-body">
+        <p class="small text-muted mb-2">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <h2 class="h4 card-title"><a href="{{ post.url | relative_url }}" class="stretched-link text-decoration-none">{{ post.title }}</a></h2>
+        <p class="card-text">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+      </div>
+    </article>
+  </div>
+  {% endfor %}
+</div>
